@@ -1,0 +1,67 @@
+<!-- Top navigation -->
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" routerLink="/register-student">
+    <img class="brand-logo" src="assets/habib.jpg.png" height="300%" width="50%" alt="GNI logo">
+    <span class="dasboard-text">GURU NANAK INSTITUTIONS</span>
+  </a>
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" routerLink="/register-student">
+        <span class="user-image" style="background-image: url('assets/user.jpg')"></span>
+         Admin form
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Sidebar navigation -->
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+
+          <!-- routerLink="/register-student" to navigate to view-students component -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/register-student" routerLinkActive="active">
+              <i class="fas fa-plus"></i>Add Student
+            </a>
+          </li>
+
+          <!-- routerLink="/view-students" to navigate to view-students component -->
+          <!-- routerLinkActive="active" activates active class for component-->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/view-students" routerLinkActive="active">
+              <i class="fas fa-list-ul"></i>Students List
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="inner-adjust">
+
+        <!-- Use router template to show the components for which router service is activated -->
+        <router-outlet></router-outlet>
+
+        <!-- Footer -->
+        <br>
+        <br>
+        <br>
+        <footer>
+          This demo app is created by
+          <a href="https://git/habibulla4455" title="Learn Free Full Stack Software Development">
+            Habibulla
+          </a>
+          a place where<br> you can
+          <a href="https://git/habibulla4455" title="Learn Free Full Stack Software Development">
+            Learn Free Full Stack Software Development.
+          </a>
+        </footer>
+      </div>
+    </main>
+
+  </div>
+</div>
